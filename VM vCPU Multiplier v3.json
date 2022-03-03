@@ -1,0 +1,18 @@
+{"7218772e-bef2-405f-a559-7e1b1d7ec83d": {
+   "resourceKinds": [
+      {
+         "resourceKindKey": "linux",
+         "adapterKindKey": "APPOSUCP"
+      },
+      {
+         "resourceKindKey": "win",
+         "adapterKindKey": "APPOSUCP"
+      }
+   ],
+   "modificationTime": 1646083522660,
+   "name": "VM vCPU Multiplier v3",
+   "formula": "sum(${adaptertype=VMWARE, objecttype=VirtualMachine, attribute=cpu|corecount_provisioned, depth=-1})*3",
+   "description": "VM vCPU Multiplier v3",
+   "unitId": "",
+   "modifiedBy": "287ed085-c6ca-4255-b69c-956f1665ed51"
+}}
